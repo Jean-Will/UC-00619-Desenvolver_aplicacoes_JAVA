@@ -8,17 +8,8 @@ import java.util.Scanner;
  *
  * @author jeanw
  */
-public class Ex011 {
+public class Ex009 {
     public static void main(String[] args) {
-            
-        
         Scanner sc = new Scanner(System.in);
-        double a;
-        double b;
-        double x;
-        double y;
-                
-        
-        
     }
 }

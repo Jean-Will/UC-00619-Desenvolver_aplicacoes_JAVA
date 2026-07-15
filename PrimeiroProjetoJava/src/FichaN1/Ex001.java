@@ -24,6 +24,8 @@ public class Ex001 {
         
         System.out.printf("Bebeu %d cafes e vais precisar pagar %.2f €" ,qtdCafe, calc);
         
+        sc.close();
+        
         
         
         

@@ -27,7 +27,7 @@ public class Ex002 {
         
         System.out.printf("%s %s %s \n" ,boasVindas,nome , apelido);
         
-        
+        sc.close();
         
     }
 }
