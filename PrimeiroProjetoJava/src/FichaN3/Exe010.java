@@ -5,14 +5,15 @@
 package FichaN3;
 import java.util.Scanner;
 /**
- *  Número dentro do intervalo
+ *. Divisões sucessivas
     Cria um programa que leia um número inteiro e
-*   continue a pedir enquanto o número não 
-    estiver entre 1 e 100.
+* o divida por 2 repetidamente até que o 
+    resultado seja menor que 1, usando um while.
+ * 
  * 
  * @author jeanw
  */
-public class Exe006 {
+public class Exe010 {
 
     /**
      * @param args the command line arguments
@@ -20,14 +21,15 @@ public class Exe006 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num;
+        float resto;
         
-        System.out.print("Insira um numero: ");
+        System.out.print("Insira um numero: \n");
         num = sc.nextInt();
         
-        while(num < 1 || num > 100){
-            System.out.print(num);
-            System.out.print("\nInsira um numeor valido entre ( 1 e 100 ) \n");
-            num = sc.nextInt();
+        while(num /2 >1){
+            
+            num = num %2;
+            System.out.printf("o numero %d foi /2 \n", num);
         }
         
     }

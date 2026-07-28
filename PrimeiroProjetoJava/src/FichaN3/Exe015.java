@@ -5,30 +5,38 @@
 package FichaN3;
 import java.util.Scanner;
 /**
- *  Número dentro do intervalo
-    Cria um programa que leia um número inteiro e
-*   continue a pedir enquanto o número não 
-    estiver entre 1 e 100.
- * 
+ *  Adivinhar o número
+    Cria um programa onde o utilizador tem de 
+*   adivinhar um número (por exemplo, 7), 
+    repetindo as tentativas até acertar.
+ *
  * @author jeanw
  */
-public class Exe006 {
+public class Exe015 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int num;
         
-        System.out.print("Insira um numero: ");
+        int secret;
+        int num;
+        int contaErro;
+        
+        System.out.print("Inisira um numero: \n");
         num = sc.nextInt();
         
-        while(num < 1 || num > 100){
-            System.out.print(num);
-            System.out.print("\nInsira um numeor valido entre ( 1 e 100 ) \n");
+        secret = 77;
+        contaErro = 0;
+        
+        while(num != secret){
+            System.out.print("Inisira um numero: \n");
             num = sc.nextInt();
+            contaErro = contaErro +1;
+            System.out.print("Ja tentou " + "" +contaErro + "vezes \n");
         }
+        
         
     }
     

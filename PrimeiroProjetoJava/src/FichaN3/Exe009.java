@@ -5,14 +5,15 @@
 package FichaN3;
 import java.util.Scanner;
 /**
- *  Número dentro do intervalo
-    Cria um programa que leia um número inteiro e
-*   continue a pedir enquanto o número não 
-    estiver entre 1 e 100.
  * 
+ * . Maior número
+    Cria um programa que leia vários números inteiros 
+* e determine o maior valor 
+    introduzido, terminando quando o utilizador inserir 0.
+ *
  * @author jeanw
  */
-public class Exe006 {
+public class Exe009 {
 
     /**
      * @param args the command line arguments
@@ -20,15 +21,24 @@ public class Exe006 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num;
+        int maior;
+        int menor;
         
         System.out.print("Insira um numero: ");
         num = sc.nextInt();
-        
-        while(num < 1 || num > 100){
-            System.out.print(num);
-            System.out.print("\nInsira um numeor valido entre ( 1 e 100 ) \n");
+        maior = 0;
+        while(num != 0){
+            maior = num;
+            System.out.print("Insira um numero: ");
             num = sc.nextInt();
+            if (num > maior) {
+                maior = num;
+            }
+            
         }
+        System.out.printf("O maior numeor inserido foi o %d\n", maior);
+        
+        
         
     }
     

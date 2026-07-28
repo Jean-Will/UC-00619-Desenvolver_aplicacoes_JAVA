@@ -5,14 +5,16 @@
 package FichaN3;
 import java.util.Scanner;
 /**
- *  Número dentro do intervalo
-    Cria um programa que leia um número inteiro e
-*   continue a pedir enquanto o número não 
-    estiver entre 1 e 100.
+ * Soma de números
+    Cria um programa que peça números ao utilizador 
+*   e vá somando, parando apenas 
+    quando o utilizador introduzir o número 0.
+
+ * 
  * 
  * @author jeanw
  */
-public class Exe006 {
+public class Exe014 {
 
     /**
      * @param args the command line arguments
@@ -20,15 +22,22 @@ public class Exe006 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num;
+        int soma;
         
-        System.out.print("Insira um numero: ");
+        System.out.print("Insira um numero: \n");
         num = sc.nextInt();
+        soma = 0;
         
-        while(num < 1 || num > 100){
-            System.out.print(num);
-            System.out.print("\nInsira um numeor valido entre ( 1 e 100 ) \n");
+        while(num !=0){
+            soma = soma + num;
+            System.out.print("Insira um numero: \n");
             num = sc.nextInt();
         }
+        System.out.printf("A Soma dos numeros e: %d \n", soma);
+        
+        
+        
+        
         
     }
     
